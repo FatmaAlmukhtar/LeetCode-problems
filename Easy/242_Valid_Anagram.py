@@ -19,6 +19,9 @@ class Solution(object):
 
         return True
 
+        # one line code
+        #return sorted(s)==sorted(t)
+
 
 if __name__ == "__main__":
     assert Solution().isAnagram('car','rat') == False
