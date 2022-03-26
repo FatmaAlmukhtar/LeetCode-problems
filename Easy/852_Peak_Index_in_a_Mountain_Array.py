@@ -16,5 +16,18 @@ class Solution(object):
         return None
 
 
+#### using binary search
+"""
+class Solution(object):
+    def peakIndexInMountainArray(self, A):
+        lo, hi = 0, len(A) - 1
+        while lo < hi:
+            mi = (lo + hi) / 2
+            if A[mi] < A[mi + 1]:
+                lo = mi + 1
+            else:
+                hi = mi
+        return lo
+"""
 if __name__ == "__main__":
     assert Solution().peakIndexInMountainArray([0,10,5,2]) == 1
