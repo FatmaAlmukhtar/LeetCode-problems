@@ -12,4 +12,4 @@ var twoSum = function(nums, target) {
         }
         visited.set(nums[i], i);
     }
-};
+}
